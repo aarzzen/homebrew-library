@@ -1,5 +1,5 @@
 class Dat2csv < Formula
-  desc "Simple utility to convert DAT files to CSV files"
+  desc "Simple utility to convert DAT files to CSV files."
   homepage "https://github.com/aarzzen/dat2csv"
   license "MIT"
 
