@@ -4,7 +4,7 @@
 
 `brew install dat2csv/tap/<formula>`
 
-Or `brew tap aarzzen/tap` and then `brew install <formula>`.
+Or `brew tap dat2csv/tap` and then `brew install <formula>`.
 
 ## Documentation
 
