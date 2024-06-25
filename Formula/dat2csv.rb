@@ -22,7 +22,7 @@ class Dat2csv < Formula
     output = `env`
     puts output
 
-    ohai "dat2csv has been installed! :)\n"
+    ohai "dat2csv has been installed!\n"
     ohai "Usage: cat file.dat | dat2csv"
   end
 end
