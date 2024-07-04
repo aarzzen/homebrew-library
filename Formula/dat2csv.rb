@@ -2,13 +2,14 @@ class Dat2csv < Formula
   desc "Simple utility to convert DAT files to CSV files."
   homepage "https://github.com/dat2csv/dat2csv"
   license "MIT"
+  revision 2
 
   if Hardware::CPU.arm?
-    url "https://github.com/dat2csv/dat2csv/releases/download/0.9.1/dat2csv-darwin-arm64.tar.gz"
-    sha256 "b7e74060f898b7e8c3b58ab4b081effd87311e294cbfe920b06117ccefb3da62"
+    url "https://github.com/dat2csv/dat2csv/releases/download/0.9.2/dat2csv-darwin-arm64.tar.gz"
+    sha256 "bcdf84ebedca868c2aa97fbdef3a99211ba66cfaaf01670b747dff6062773fd9"
   else
-    url "https://github.com/dat2csv/dat2csv/releases/download/0.9.1/dat2csv-darwin-amd64.tar.gz"
-    sha256 "e07dacfb36b91b10ba897fe3840e04aeba1a556e484b1f00a81b7b1c2929f9cc"
+    url "https://github.com/dat2csv/dat2csv/releases/download/0.9.2/dat2csv-darwin-amd64.tar.gz"
+    sha256 "a97e6f0b2682d1796228cdef50e474499c61474070b60bdf46c19e11dcc6d8f2"
   end
 
   def install
