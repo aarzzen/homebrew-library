@@ -1,10 +1,10 @@
 # dat2csv Tap
 
-## How do I install these formulae?
+## How do I install these formula?
 
-`brew install dat2csv/tap/<formula>`
+`brew install dat2csv/tap/dat2csv`
 
-Or `brew tap dat2csv/tap` and then `brew install <formula>`.
+Or `brew tap dat2csv/tap` and then `brew install dat2csv`.
 
 ## Documentation
 
