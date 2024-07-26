@@ -2,7 +2,7 @@ class Dat2csv < Formula
   desc "Simple utility to convert DAT files to CSV files."
   homepage "https://github.com/dat2csv/dat2csv"
   license "MIT"
-  revision 2
+  revision 3
 
   if Hardware::CPU.arm?
     url "https://github.com/dat2csv/dat2csv/releases/download/0.9.2/dat2csv-darwin-arm64.tar.gz"
